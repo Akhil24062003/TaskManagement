@@ -21,7 +21,5 @@ public interface ProjectRepository extends JpaRepository<Project, Integer> {
 
     List<Project> findByTasks_Priority(String priority); // ✅ Assuming Task has a 'priority' field
     
-    List<Project> findByUser_UserIdIn(List<Integer> userIds);
-    
     
 }
